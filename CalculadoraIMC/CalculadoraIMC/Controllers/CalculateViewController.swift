@@ -15,6 +15,8 @@ class CalculateViewController: UIViewController {
     @IBOutlet weak var heightSlider: UISlider!
     @IBOutlet weak var weightSlider: UISlider!
     
+    var calculator = Calculator()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -30,10 +32,12 @@ class CalculateViewController: UIViewController {
     }
     
     @IBAction func calculateIMC(_ sender: UIButton) {
-        let squaredHeight = heightSlider.value *  heightSlider.value
-        let imc = weightSlider.value / squaredHeight
+        calculator.calculateIMC(heightSlider.value, weightSlider.value)
+        
         guard let resultViewController = storyboard?.instantiateViewController(identifier: "ResultViewController") as? ResultViewController else { return }
-        resultViewController.imc = String(format: "%.1f", imc)
+        resultViewController.imcValue = calculator.getIMCValue()
+        resultViewController.advice = calculator.getAdvice()
+        resultViewController.color = calculator.getColor()
         present(resultViewController, animated: true, completion: nil)
     }
     

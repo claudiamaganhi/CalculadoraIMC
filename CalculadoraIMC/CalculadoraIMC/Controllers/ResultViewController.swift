@@ -10,14 +10,21 @@ import UIKit
 
 class ResultViewController: UIViewController {
     
+    @IBOutlet weak var backgroundImageView: UIImageView!
     @IBOutlet weak var resultLabel: UILabel!
+    @IBOutlet weak var adviceLabel: UILabel!
     
-    var imc: String = ""
+    var imcValue: String?
+    var advice: String?
+    var color: UIColor?
+
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        resultLabel.text = "Seu IMC é \(imc)"
-
+        resultLabel.text = imcValue
+        adviceLabel.text = advice
+        resultLabel.textColor = color
+        adviceLabel.textColor = color
     }
     @IBAction func recalculate(_ sender: UIButton) {
         dismiss(animated: true, completion: nil)

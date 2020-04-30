@@ -39,7 +39,7 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1,56 cm" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTg-7o-nOY">
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QTg-7o-nOY">
                                                 <rect key="frame" x="317" y="0.0" width="57" height="50"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                 <nil key="textColor"/>
@@ -47,7 +47,7 @@
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="1.5" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="mGe-LU-75B">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="3" translatesAutoresizingMaskIntoConstraints="NO" id="mGe-LU-75B">
                                         <rect key="frame" x="-2" y="58" width="378" height="51"/>
                                         <color key="tintColor" red="1" green="0.42745098040000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -63,15 +63,15 @@
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
-                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="52 Kgs" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTc-7q-sd3">
-                                                <rect key="frame" x="327.5" y="0.0" width="46.5" height="50"/>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nTc-7q-sd3">
+                                                <rect key="frame" x="324" y="0.0" width="50" height="50"/>
                                                 <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="16"/>
                                                 <nil key="textColor"/>
                                                 <nil key="highlightedColor"/>
                                             </label>
                                         </subviews>
                                     </stackView>
-                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="70" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="pb0-l7-o5H">
+                                    <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" minValue="0.0" maxValue="200" translatesAutoresizingMaskIntoConstraints="NO" id="pb0-l7-o5H">
                                         <rect key="frame" x="-2" y="174" width="378" height="51"/>
                                         <color key="tintColor" red="1" green="0.42745098040000001" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <connections>
@@ -141,12 +141,29 @@
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calculate_background" translatesAutoresizingMaskIntoConstraints="NO" id="Sn4-Vw-Wkh">
                                 <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDh-Qw-ngL">
-                                <rect key="frame" x="155" y="379.5" width="104.5" height="47.5"/>
-                                <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
-                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <nil key="highlightedColor"/>
-                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="OPu-mY-55b">
+                                <rect key="frame" x="20" y="360" width="374" height="176"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="SEU IMC É" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7W6-AN-lp2">
+                                        <rect key="frame" x="0.0" y="0.0" width="374" height="47.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="40"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Result" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UDh-Qw-ngL">
+                                        <rect key="frame" x="0.0" y="67.5" width="374" height="52.5"/>
+                                        <fontDescription key="fontDescription" name="Optima-Bold" family="Optima" pointSize="44"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ADVICE" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ryd-kG-mIR">
+                                        <rect key="frame" x="0.0" y="140" width="374" height="36"/>
+                                        <fontDescription key="fontDescription" name="Optima-Regular" family="Optima" pointSize="30"/>
+                                        <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="QP5-7q-04j">
                                 <rect key="frame" x="20" y="782" width="374" height="50"/>
                                 <subviews>
@@ -177,18 +194,21 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="AgF-7Q-edp" firstAttribute="trailing" secondItem="Sn4-Vw-Wkh" secondAttribute="trailing" id="KJ0-TA-mLN"/>
-                            <constraint firstItem="UDh-Qw-ngL" firstAttribute="centerY" secondItem="ZDu-g2-9Wh" secondAttribute="centerY" multiplier="0.9" id="Keh-OZ-Eip"/>
-                            <constraint firstItem="UDh-Qw-ngL" firstAttribute="centerX" secondItem="ZDu-g2-9Wh" secondAttribute="centerX" id="MVD-Z4-TfO"/>
                             <constraint firstItem="AgF-7Q-edp" firstAttribute="trailing" secondItem="QP5-7q-04j" secondAttribute="trailing" constant="20" id="NXy-nm-wke"/>
                             <constraint firstItem="Sn4-Vw-Wkh" firstAttribute="top" secondItem="ZDu-g2-9Wh" secondAttribute="top" id="TqB-Vw-hAu"/>
                             <constraint firstItem="QP5-7q-04j" firstAttribute="leading" secondItem="AgF-7Q-edp" secondAttribute="leading" constant="20" id="bb4-kt-QJR"/>
+                            <constraint firstItem="OPu-mY-55b" firstAttribute="centerY" secondItem="ZDu-g2-9Wh" secondAttribute="centerY" id="gTJ-mV-rD6"/>
+                            <constraint firstItem="AgF-7Q-edp" firstAttribute="trailing" secondItem="OPu-mY-55b" secondAttribute="trailing" constant="20" id="hyK-Ds-ov6"/>
                             <constraint firstItem="AgF-7Q-edp" firstAttribute="bottom" secondItem="QP5-7q-04j" secondAttribute="bottom" constant="30" id="kNX-dL-Ljp"/>
                             <constraint firstAttribute="bottom" secondItem="Sn4-Vw-Wkh" secondAttribute="bottom" id="kzB-Bv-8ae"/>
                             <constraint firstItem="Sn4-Vw-Wkh" firstAttribute="leading" secondItem="AgF-7Q-edp" secondAttribute="leading" id="sn2-9o-x7e"/>
+                            <constraint firstItem="OPu-mY-55b" firstAttribute="leading" secondItem="AgF-7Q-edp" secondAttribute="leading" constant="20" id="y4n-x5-Anw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="AgF-7Q-edp"/>
                     </view>
                     <connections>
+                        <outlet property="adviceLabel" destination="ryd-kG-mIR" id="ZyA-B8-Zb5"/>
+                        <outlet property="backgroundImageView" destination="Sn4-Vw-Wkh" id="vUm-Vt-xCN"/>
                         <outlet property="resultLabel" destination="UDh-Qw-ngL" id="077-Lw-0Lq"/>
                     </connections>
                 </viewController>

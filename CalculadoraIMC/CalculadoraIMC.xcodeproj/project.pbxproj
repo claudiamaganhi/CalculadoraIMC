@@ -15,6 +15,7 @@
 		0F352FDE245893F000A4924E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F352FDC245893F000A4924E /* LaunchScreen.storyboard */; };
 		0F352FED2459E28900A4924E /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352FEC2459E28900A4924E /* ResultViewController.swift */; };
 		0F352FEF245A08BF00A4924E /* Calculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352FEE245A08BF00A4924E /* Calculator.swift */; };
+		0F352FF1245AF5B700A4924E /* IMC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F352FF0245AF5B700A4924E /* IMC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		0F352FDF245893F000A4924E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0F352FEC2459E28900A4924E /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 		0F352FEE245A08BF00A4924E /* Calculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Calculator.swift; sourceTree = "<group>"; };
+		0F352FF0245AF5B700A4924E /* IMC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IMC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +85,7 @@
 			isa = PBXGroup;
 			children = (
 				0F352FEE245A08BF00A4924E /* Calculator.swift */,
+				0F352FF0245AF5B700A4924E /* IMC.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -193,6 +196,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				0F352FD6245893E900A4924E /* CalculateViewController.swift in Sources */,
+				0F352FF1245AF5B700A4924E /* IMC.swift in Sources */,
 				0F352FD2245893E900A4924E /* AppDelegate.swift in Sources */,
 				0F352FD4245893E900A4924E /* SceneDelegate.swift in Sources */,
 				0F352FEF245A08BF00A4924E /* Calculator.swift in Sources */,
